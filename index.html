@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shesilia's Handmade Jewelry & Accessories</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      Shesilia's <span>Jewelry</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="active">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+
+  <!-- ============================
+       PAGE 1 — HOME
+       ============================ -->
+  <section id="page-home" class="page-section active-page">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">✦ Handmade with Love</span>
+        <h1 class="hero-title">
+          Perhiasan <em>Unik</em><br>
+          Buatan Tangan<br>
+          Penuh Cinta
+        </h1>
+        <p class="hero-desc">
+          Setiap karya adalah cerita. Shesilia's Jewelry menghadirkan koleksi
+          perhiasan dan aksesori handmade yang eksklusif — dibuat satu per satu
+          dengan teknik tradisional dan sentuhan modern.
+        </p>
+        <a href="produk.html"><button class="btn-primary">Lihat Koleksi</button></a>
+        <a href="kontak.html"><button class="btn-outline">Pesan Custom</button></a>
+      </div>
+      <div class="hero-image">
+        <div class="hero-jewelry-box">💍</div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="home-stats">
+      <div class="stat-item">
+        <span class="stat-number">200+</span>
+        <span class="stat-label">Karya Terjual</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Handmade</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Pelanggan Puas</span>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="section-header">
+      <span class="section-tag">✦ Pilihan Terbaik</span>
+      <h2 class="section-title">Koleksi <em>Unggulan</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="products-grid" style="padding-bottom: 5rem;">
+      <div class="product-card" data-category="ring" onclick="openModal('images/produk/Golden Bloom Ring.jpeg','Bestseller','Cincin','Golden Bloom Ring','Cincin kawat emas dengan liontin bunga mawar mini handmade, cocok sebagai hadiah. Dibuat dari kawat tembaga lapis emas dengan teknik wire wrapping. Tersedia dalam ukuran 5–9.','85000')">
+        <div class="product-img">
+          <img src="images/produk/Golden Bloom Ring.jpeg" alt="Golden Bloom Ring">
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Cincin</p>
+          <h3 class="product-name">Golden Bloom Ring</h3>
+          <p class="product-desc">Cincin kawat emas dengan liontin bunga mawar mini, cocok untuk hadiah dan koleksi pribadi.</p>
+          <div class="product-footer">
+            <span class="product-price">Rp 85.000</span>
+            <button class="add-cart-btn" onclick="event.stopPropagation(); openModal('images/produk/Golden Bloom Ring.jpeg','Bestseller','Cincin','Golden Bloom Ring','Cincin kawat emas dengan liontin bunga mawar mini handmade, cocok sebagai hadiah. Dibuat dari kawat tembaga lapis emas dengan teknik wire wrapping. Tersedia dalam ukuran 5–9.','85000')">+ Keranjang</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="necklace" onclick="openModal('images/produk/Pearl Cascade Necklace.jpeg','New','Kalung','Pearl Cascade Necklace','Kalung dengan manik-manik mutiara imitasi berlapis emas, elegan untuk acara formal. Panjang rantai 45cm dengan pengait lobster. Cocok untuk wisuda, kondangan, dan acara spesial.','120000')">
+        <div class="product-img">
+          <img src="images/produk/Pearl Cascade Necklace.jpeg" alt="Pearl Cascade Necklace">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <p class="product-category">Kalung</p>
+          <h3 class="product-name">Pearl Cascade Necklace</h3>
+          <p class="product-desc">Kalung handmade dengan manik-manik mutiara imitasi berlapis emas, elegan untuk acara formal.</p>
+          <div class="product-footer">
+            <span class="product-price">Rp 120.000</span>
+            <button class="add-cart-btn" onclick="event.stopPropagation(); openModal('images/produk/Pearl Cascade Necklace.jpeg','New','Kalung','Pearl Cascade Necklace','Kalung dengan manik-manik mutiara imitasi berlapis emas, elegan untuk acara formal. Panjang rantai 45cm dengan pengait lobster. Cocok untuk wisuda, kondangan, dan acara spesial.','120000')">+ Keranjang</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="bracelet" onclick="openModal('images/produk/Macramé Boho Bracelet.jpeg','','Gelang','Macramé Boho Bracelet','Gelang macramé dengan batu alam dan manik kayu, desain boho chic yang stylish. Dibuat dari benang katun premium dengan teknik simpul tradisional. Bisa request warna custom.','65000')">
+        <div class="product-img">
+          <img src="images/produk/Macramé Boho Bracelet.jpeg" alt="Macramé Boho Bracelet">
+        </div>
+        <div class="product-info">
+          <p class="product-category">Gelang</p>
+          <h3 class="product-name">Macramé Boho Bracelet</h3>
+          <p class="product-desc">Gelang macramé dengan batu alam dan manik kayu, desain boho chic yang stylish setiap hari.</p>
+          <div class="product-footer">
+            <span class="product-price">Rp 65.000</span>
+            <button class="add-cart-btn" onclick="event.stopPropagation(); openModal('images/produk/Macramé Boho Bracelet.jpeg','','Gelang','Macramé Boho Bracelet','Gelang macramé dengan batu alam dan manik kayu, desain boho chic yang stylish. Dibuat dari benang katun premium dengan teknik simpul tradisional. Bisa request warna custom.','65000')">+ Keranjang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">Shesilia's <span>Jewelry</span></a>
+        <p>Perhiasan dan aksesori handmade buatan tangan dengan cinta. Setiap karya unik dan tidak ada duanya.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <ul>
+          <li>📧 shesilia@gmail.com</li>
+          <li>📱 +62 812-3456-7890</li>
+          <li>📍 Jakarta, Indonesia</li>
+          <li>🕐 Senin–Sabtu, 09.00–18.00</li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>© 2024 Shesilia's Handmade Jewelry & Accessories · Shesilia Wibowo · NIM 2431417068</p>
+    </div>
+
+  </section>
+
+  <!-- ============================
+       PRODUCT MODAL
+       ============================ -->
+  <div id="productModal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModalDirect()">&times;</button>
+      <div class="modal-img" id="modal-img"></div>
+      <div class="modal-body">
+        <span class="modal-badge" id="modal-badge"></span>
+        <p class="modal-category" id="modal-category"></p>
+        <h2 class="modal-name" id="modal-name"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-price-row">
+          <span class="modal-price" id="modal-price"></span>
+          <span class="modal-subtotal" id="modal-subtotal"></span>
+        </div>
+        <div class="modal-qty-row">
+          <span class="modal-qty-label">Jumlah:</span>
+          <div class="qty-control">
+            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <span class="qty-value" id="qty-value">1</span>
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+          </div>
+        </div>
+        <button class="modal-cart-btn" onclick="addToCartFromModal()">🛒 Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

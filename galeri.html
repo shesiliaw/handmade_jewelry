@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri – Shesilia's Handmade Jewelry & Accessories</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+       ============================ -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      Shesilia's <span>Jewelry</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="galeri.html" class="active">Galeri</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+
+  <!-- ============================
+       PAGE 4 — GALERI
+       ============================ -->
+  <section id="page-gallery" class="page-section active-page">
+
+    <div class="gallery-header">
+      <span class="section-tag">✦ Behind The Craft</span>
+      <h1>Galeri <em>Karya</em></h1>
+      <p>Sekilas perjalanan proses kreatif dan karya-karya yang telah lahir dari tangan ini.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item" onclick="openGallery('Koleksi Cincin Premium', 'Koleksi cincin wire wrapping dengan teknik advanced. Setiap lilitan kawat dikerjakan dengan pinset khusus untuk menghasilkan detail yang presisi.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Koleksi Cincin Premium.jpeg" alt="Koleksi Cincin Premium"></div>
+        <div class="gallery-overlay">
+          <h3>Koleksi Cincin Premium</h3>
+          <p>Wire Wrapping Technique</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Kalung Resin Bunga', 'Proses pengecoran resin dengan bunga-bunga kering pilihan. Setiap liontin membutuhkan waktu 48 jam pengeringan.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Kalung Resin Bunga.jpeg" alt="Kalung Resin Bunga"></div>
+        <div class="gallery-overlay">
+          <h3>Kalung Resin Bunga</h3>
+          <p>Resin Art Collection</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Gelang Macramé', 'Workshop macramé mingguan. Teknik simpul yang dipadukan dengan batu alam menghasilkan aksesori yang kuat sekaligus estetik.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Gelang Macramé.jpeg" alt="Gelang Macramé"></div>
+        <div class="gallery-overlay">
+          <h3>Gelang Macramé</h3>
+          <p>Macramé Craft</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Anting Koleksi Bulan', 'Seri anting bertema langit malam dengan simbol bulan dan bintang. Terbuat dari kawat silver dan manik-manik gelap.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Anting Seri Bulan.jpeg" alt="Anting Seri Bulan"></div>
+        <div class="gallery-overlay">
+          <h3>Anting Seri Bulan</h3>
+          <p>Celestial Collection</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Set Perhiasan Pesta', 'Paket set perhiasan untuk acara spesial: kalung + anting + gelang dalam tema yang senada.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Set Perhiasan Pesta.jpeg" alt="Set Perhiasan Pesta"></div>
+        <div class="gallery-overlay">
+          <h3>Set Perhiasan Pesta</h3>
+          <p>Party Collection</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Aksesori Rambut Bunga', 'Koleksi aksesori rambut dari kain organza dan satin. Cocok untuk bridesmaid, wisuda, dan foto prewedding.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Aksesori Rambut Bunga.jpeg" alt="Aksesori Rambut Bunga"></div>
+        <div class="gallery-overlay">
+          <h3>Aksesori Rambut Bunga</h3>
+          <p>Floral Hair Collection</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Custom Order - Nama', 'Layanan perhiasan custom dengan inisial atau nama. Paling populer untuk kado ulang tahun dan anniversary.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Custom Nama & Inisial.jpeg" alt="Custom Nama & Inisial"></div>
+        <div class="gallery-overlay">
+          <h3>Custom Nama & Inisial</h3>
+          <p>Personalized Jewelry</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Koleksi Batu Alam', 'Perhiasan dengan batu alam pilihan: amethyst, rose quartz, turquoise, dan labradorite. Setiap batu memiliki energi tersendiri.')">
+        <div class="gallery-item-inner"><img src="images/galeri/Batu Alam Collection.jpeg" alt="Batu Alam Collection"></div>
+        <div class="gallery-overlay">
+          <h3>Batu Alam Collection</h3>
+          <p>Natural Stone Jewelry</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" onclick="openGallery('Proses Workshop', 'Di balik layar: meja kerja dan alat-alat yang digunakan dalam proses pembuatan setiap perhiasan handmade.')">
+        <div class="gallery-item-inner"><img src="images/galeri/behind the scenes.jpeg" alt="Behind The Scenes"></div>
+        <div class="gallery-overlay">
+          <h3>Behind The Scenes</h3>
+          <p>Workshop Process</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">Shesilia's <span>Jewelry</span></a>
+        <p>Perhiasan dan aksesori handmade buatan tangan dengan cinta.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <ul>
+          <li>📧 shesilia@gmail.com</li>
+          <li>📱 +62 812-3456-7890</li>
+          <li>📍 Jakarta, Indonesia</li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>© 2024 Shesilia's Handmade Jewelry & Accessories · Shesilia Wibowo · NIM 2431417068</p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
