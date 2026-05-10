@@ -1046,7 +1046,7 @@ footer {
 
   .form-row { grid-template-columns: 1fr; }
 
-  .btn-outline { margin-left: 0; margin-top: 1rem; display: block; width: fit-content; }
+  .btn-outline { margin-left: 0; margin-top: 1rem; display: block; width: fit-content; margin-right: auto; margin-left: auto; }
 }
 
 /* ============================
