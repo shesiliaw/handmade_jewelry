@@ -1,6 +1,3 @@
-// ---- NAVIGATION (multi-page version) ----
-// Navigasi sudah menggunakan href antar file HTML, tidak perlu fungsi navigateTo
-
 // Hamburger toggle
 document.querySelector('.hamburger').addEventListener('click', () => {
   document.querySelector('.nav-links').classList.toggle('open');
@@ -136,9 +133,6 @@ document.querySelectorAll('.product-card, .value-card, .gallery-item').forEach(e
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
 });
-
-// ---- INITIALIZE ----
-// Tidak perlu navigateTo — setiap halaman sudah tampil langsung via active-page class
 
 // ---- PRODUCT MODAL ----
 let currentProduct = {};

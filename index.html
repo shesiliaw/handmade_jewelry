@@ -28,9 +28,7 @@
   </nav>
 
 
-  <!-- ============================
-       PAGE 1 — HOME
-       ============================ -->
+<!-- HOME -->
   <section id="page-home" class="page-section active-page">
 
     <!-- Hero -->
@@ -125,6 +123,33 @@
       </div>
     </div>
 
+    <!-- produk modal -->
+     <div id="productModal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModalDirect()">&times;</button>
+      <div class="modal-img" id="modal-img"></div>
+      <div class="modal-body">
+        <span class="modal-badge" id="modal-badge"></span>
+        <p class="modal-category" id="modal-category"></p>
+        <h2 class="modal-name" id="modal-name"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-price-row">
+          <span class="modal-price" id="modal-price"></span>
+          <span class="modal-subtotal" id="modal-subtotal"></span>
+        </div>
+        <div class="modal-qty-row">
+          <span class="modal-qty-label">Jumlah:</span>
+          <div class="qty-control">
+            <button class="qty-btn" onclick="changeQty(-1)">−</button>
+            <span class="qty-value" id="qty-value">1</span>
+            <button class="qty-btn" onclick="changeQty(1)">+</button>
+          </div>
+        </div>
+        <button class="modal-cart-btn" onclick="addToCartFromModal()">🛒 Tambah ke Keranjang</button>
+      </div>
+    </div>
+  </div>
+
     <!-- Footer -->
     <footer>
       <div class="footer-brand">
@@ -156,36 +181,7 @@
     </div>
 
   </section>
-
-  <!-- ============================
-       PRODUCT MODAL
-       ============================ -->
-  <div id="productModal" class="modal-overlay" onclick="closeModal(event)">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModalDirect()">&times;</button>
-      <div class="modal-img" id="modal-img"></div>
-      <div class="modal-body">
-        <span class="modal-badge" id="modal-badge"></span>
-        <p class="modal-category" id="modal-category"></p>
-        <h2 class="modal-name" id="modal-name"></h2>
-        <p class="modal-desc" id="modal-desc"></p>
-        <div class="modal-price-row">
-          <span class="modal-price" id="modal-price"></span>
-          <span class="modal-subtotal" id="modal-subtotal"></span>
-        </div>
-        <div class="modal-qty-row">
-          <span class="modal-qty-label">Jumlah:</span>
-          <div class="qty-control">
-            <button class="qty-btn" onclick="changeQty(-1)">−</button>
-            <span class="qty-value" id="qty-value">1</span>
-            <button class="qty-btn" onclick="changeQty(1)">+</button>
-          </div>
-        </div>
-        <button class="modal-cart-btn" onclick="addToCartFromModal()">🛒 Tambah ke Keranjang</button>
-      </div>
-    </div>
-  </div>
-
+  
   <script src="script.js"></script>
 </body>
 </html>
